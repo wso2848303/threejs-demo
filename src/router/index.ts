@@ -1,0 +1,23 @@
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+
+const routes: Array<RouteRecordRaw> = [
+  {
+    path: "/",
+    component: () => import("../views/Start.vue"),
+  },
+  {
+    path: "/line",
+    component: () => import("../views/Line.vue"),
+  },
+  {
+    path: "/ctb",
+    component: () => import("../views/ctb.vue"),
+  },
+];
+
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes,
+});
+
+export default router;

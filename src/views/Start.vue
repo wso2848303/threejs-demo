@@ -12,8 +12,8 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   1000
 );
-const light = new THREE.AmbientLight(0x404040); // soft white light
-scene.add(light);
+// const light = new THREE.AmbientLight(0x404040); // soft white light
+// scene.add(light);
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
